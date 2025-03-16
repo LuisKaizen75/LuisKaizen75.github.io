@@ -1,43 +1,50 @@
-body{
+body {
     background-color: black;
     color: whitesmoke;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 60px;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-h2{
+h2 {
     text-align: left;
     font-size: 30px;
     margin-top: 20px;
 }
 
 .logo {
-    float: left;
     height: 100%;
 }
 
 .logo img {
     height: 100%;
+    max-width: 100%;
 }
 
 .topnav {
     display: flex;
-    float: right;
-    margin-left: auto;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .topmenu {
-    color: whitesmoke;
-    margin: 10px;
-    padding: 20px;
+    color: white;
+    padding: 10px 20px;
     font-size: 20px;
-    text-decoration:none;
+    text-decoration: underline;
 }
 
 .topmenu:hover {
@@ -45,94 +52,235 @@ h2{
     background-color: whitesmoke;
 }
 
-
-#about-me h1{
+h1 {
     text-align: center;
     font-size: 50px;
-    margin-top: 20px;
+    padding-top: 50px;
+    margin-block-start: 0;
 }
 
-#about-me p{
-    text-align: justify;
+#banner {
+    height: 576px;
+    background-image: url('./images/sun.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#banner p {
+    text-align: center;
     font-size: 20px;
+    font-weight: bold;
 }
 
-#about-me .container{
+#about-me {
+    text-align: center;
+    margin: 0 70px;
+}
+
+#about-me .container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.left {
-    width: 20%;
+.left, .right {
+    flex: 1;
+    max-width: 45%;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
-.left img{
+.left img {
     width: 100%;
     height: auto;
+    max-width: 300px;
+    border-radius: 10px;
 }
 
-.right {
-    width:78%;
-    margin-left: auto;
+.right .about-me {
+    text-align: left;
 }
 
-.socials{
-    display: flex;
-    justify-content: space-between;
-}
-
-.social-link{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 30%;
-    margin: 0 1%;
+.right .about-me h2 {
     text-align: center;
 }
 
-.social-link img{
-    width: 100px;
-    height: 100px;
+.right .about-me p {
+    text-align: justify;
+    font-size: 20px;
+    width: 100%;
 }
 
+#skills {
+    text-align: center;
+    margin: 0 70px;
+    padding: 20px 0;
+}
 
-.all_skills {
+.skills-container {
     display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.skill {
-border: 1px solid gray;
-display: block;
-border-radius: 6px;
-text-align: center;
-margin: 50px;
-padding: 10px;
-width: 2in;
-font-size: 20px;
-box-shadow: 0 3px 10px gray;
-background-color: white;
+.skills-belt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
-.skill img {
-height: 35px;
-align-items: center;
+.skill-icon {
+    font-size: 40px;
+    color: white;
 }
 
-.skill h3 {
-align-items: center;
-font-size: 20px;
-margin-block-start: 8px;
-margin-block-end: 5px;
-font-weight: bold;
-color: black;
-} 
+.fixed-rectangle {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: black;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
 
-.skill p {
-align-items: center;
-font-size: 15px;
-color: black;
-margin-block-start: 5px;
-margin-block-end: 5px;
-} 
+.fixed-rectangle .icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+    transition: transform 0.3s;
+}
+
+.fixed-rectangle .icon:hover {
+    transform: scale(1.2);
+}
+
+#projects-articles {
+    padding: 0 70px;
+}
+
+#projects-articles .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.projects, .articles {
+    flex: 1;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.project-box, .article-box {
+    margin-bottom: 20px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-box h3, .article-box h3 {
+    margin-top: 0;
+}
+
+.project-links {
+    display: flex;
+    gap: 10px;
+}
+
+.project-links a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    color: #007bff;
+}
+
+.article-box a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.article-box a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .topmenu {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    #about-me, #skills, #projects-articles {
+        margin: 0 20px;
+    }
+
+    #about-me .container, #projects-articles .container {
+        flex-direction: column;
+    }
+
+    .left, .right, .projects, .articles {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .skills-belt {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .skill-icon {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+        padding-top: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .topmenu {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .project-links a, .article-box a {
+        font-size: 16px;
+    }
+
+    .fixed-rectangle {
+        width: 50px;
+    }
+
+    .fixed-rectangle .icon {
+        width: 30px;
+        height: 30px;
+    }
+}

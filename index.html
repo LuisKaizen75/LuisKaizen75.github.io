@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Luis C. Garzon</title>
@@ -6,109 +6,147 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <script src="./typingEffect.js" async></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
     </head>
     <body>
         <!--Navigation Bar-->
         <nav>
             <div class="logo">
-                <img src="./images/banner.png" alt="Logo">
+                <a href="https://www.luiskaizen.com/"><img src="./images/banner.png" alt="Logo"></a>
             </div>
             <div class="topnav">
-                <a class="topmenu" href="#about-me">About Me</a>
+                <a class="topmenu" href="#about-me">About</a>
                 <a class="topmenu" href="#skills">Skills</a>
+                <a class="topmenu" href="#projects-articles">Projects</a>
+                <a class="topmenu" href="mailto:hola@luiskaizen.com">Contact</a>
             </div>
         </nav>
 
+        
+        <section id="banner">
+            <div class="banner-text">
+                <header>
+                    <h1><span id="typing-effect" class="typing-effect"></span>, I'm Luis Carlos Garzón!</h1>
+                </header>
+                <p>Building innovative solutions that make life and business more efficient and sustainable</p>
+            </div>
+        </section>
+        
         <!--About Me-->
         <section id="about-me">
-            <header>
-                <h1>Hi, I'm Luis Carlos Garzón!</h1>
-            </header>
             <div class="container">
                 <div class="left">
                     <img src="./images/profile.JPEG" alt="Luis Carlos Garzon">
                 </div>
-
                 <div class="right">
                     <div class="about-me">
                         <h2>About Me</h2>
-                    <p>I’m a passionate Software Engineer dedicated to building innovative solutions that make life and business more efficient and sustainable. With a multidisciplinary background in engineering and a lifelong fascination with technology, I bring a unique perspective to solving complex challenges, blending logic, creativity, and a commitment to excellence.<br><br>
+                        <p>I’m a passionate Software Engineer dedicated to building innovative solutions that make life and business more efficient and sustainable. With a multidisciplinary background in engineering and a lifelong fascination with technology, I bring a unique perspective to solving complex challenges, blending logic, creativity, and a commitment to excellence.<br><br>
                         I design scalable applications, automation tools, and data-driven solutions that help people and organizations work smarter. Curiosity and adaptability are key traits that drive my approach, as I welcome new challenges and constantly seek better ways to create value.<br><br>
-                    Driven by the belief that technology is a powerful force for positive change, I’m motivated to craft solutions that improve lives, foster progress, and create a more sustainable future. My approach is fueled by a deep appreciation for learning and a dedication to delivering meaningful, impactful results.<br><br>
-                    Let’s create something extraordinary together!</p>
+                        Driven by the belief that technology is a powerful force for positive change, I’m motivated to craft solutions that improve lives, foster progress, and create a more sustainable future. My approach is fueled by a deep appreciation for learning and a dedication to delivering meaningful, impactful results.<br><br>
+                        Let’s create something extraordinary together!</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--Links-->
-        <section class="links">
-            <h2>Links</h2>
-            <div class="socials">
-                <div class="social-link">
-                    <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/lc-garzon/" target="_blank"><img src="./images/linkedin.png" alt="LinkedIn"></a> 
-                    <p>Learn more about my professional journey</p>
-                </div>
-                <div class="social-link">
-                    <h3>Medium</h3>
-                    <a href="https://medium.com/@luiskaizen/" target="_blank"><img src="./images/medium.png" alt="Medium"></a>
-                    <p>Explore my articles in English and Spanish</p>
-                </div>
-                <div class="social-link">
-                    <h3>GitHub</h3>
-                    <a href="https://github.com/LuisKaizen75/" target="_blank"><img src="./images/github.jpg" alt="GitHub"></a>
-                    <p>View my project portfolio</p>
-                </div>
-            </div>
-        </section>
+        <!-- Fixed Rectangle with Icons -->
+        <div class="fixed-rectangle">
+            <a href="https://www.linkedin.com/in/lc-garzon/" target="_blank">
+                <img src="./images/linkedin.png" alt="LinkedIn" class="icon">
+            </a>
+            <a href="https://medium.com/@luiskaizen/" target="_blank">
+                <img src="./images/medium.png" alt="Medium" class="icon">
+            </a>
+            <a href="https://github.com/LuisKaizen75/" target="_blank">
+                <img src="./images/github.jpg" alt="GitHub" class="icon">
+            </a>
+        </div>
 
         <!--Skills-->
         <section id="skills">
             <h2>Skills</h2>
-            <div class="all_skills">
-                <div class="skill">
-                    <img src="./images/python.webp" alt="Python">
-                    <h3>Python</h3>
-                    <p>5 years of experience</p>
+            <div class="skills-container">
+                <div class="skills-belt">
+                    <i class="fab fa-python skill-icon"></i>
+                    <i class="fas fa-robot skill-icon"></i>
+                    <i class="fab fa-r-project skill-icon"></i>
+                    <i class="fab fa-git skill-icon"></i>
+                    <i class="fab fa-github skill-icon"></i>
+                    <i class="fas fa-database skill-icon"></i> 
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <i class="fab fa-js skill-icon"></i>
+                    <i class="fab fa-react skill-icon"></i>
+                    <i class="fab fa-node skill-icon"></i>
+                    <i class="fab fa-npm skill-icon"></i>
+                    <i class="fab fa-linux skill-icon"></i>
+                    <i class="fas fa-terminal skill-icon"></i>
+                    <i class="fas fa-cloud skill-icon"></i>
+                    <i class="fab fa-docker skill-icon"></i>
+                    <i class="fab fa-microsoft skill-icon"></i> <!-- Azure icon -->
+                    <i class="fab fa-google skill-icon"></i> <!-- GCP icon -->
                 </div>
-
-                <div class="skill">
-                    <img src="./images/r.png" alt="R">
-                    <h3>R</h3>
-                    <p>5 years of experience</p>
+            </div>
+        </section>
+        <!--Projects-->
+        <section id="projects-articles">
+            <div class="container">
+                <div class="projects">
+                    <h2>Projects</h2>
+                    <div class="project-box">
+                        <h3>Python BlackJack Game</h3>
+                        <p>This project demonstrates that even seemingly simple applications 
+                            can have complex and valuable implementations in a production 
+                            environment. It features solid testing and an automated workflow 
+                            for linting and testing using GitHub Actions.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/LuisKaizen75/python-blackjack#" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <h3>Express Project: Creating and Connecting Two Azure VMs in Quick, Easy Steps</h3>
+                        <p>I wrote a step-by-step guide on creating two virtual machines in Azure,
+                            connecting them using a virtual network, 
+                            accessing them through Bastion, and testing the connection.</p>
+                        <div class="project-links">
+                            <a href="https://medium.com/luiskaizen/express-project-creating-and-connecting-two-azure-vms-in-quick-easy-steps-674fadfc3b61" target="_blank"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <h3>Express Project: Docker Basics + Azure Deployment in 8 Minutes</h3>
+                        <p>I wrote a blog post on how to use Docker, including a detailed guide for building a 
+                            container for a web app and running it on Azure Container Apps</p>
+                        <div class="project-links">
+                            <a href="https://medium.com/luiskaizen/express-project-docker-basics-azure-deployment-in-8-minutes-19f3b741159b" target="_blank"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="skill">
-                    <img src="./images/sql.jpg" alt="SQL">
-                    <h3>SQL</h3>
-                    <p>3 years of experience</p>
+                <div class="articles">
+                    <h2>Featured Articles</h2>
+                    <div class="article-box">
+                        <h3>Mastering Python lists in 5 minutes: A cheatsheet-like guide</h3>
+                        <a href="https://medium.com/luiskaizen/mastering-python-lists-in-5-minutes-a-cheatsheet-like-guide-974069efcd35" target="_blank">Read more</a>
+                    </div>
+                    <div class="article-box">
+                        <h3>Aprende los comandos de Git que utilizarás el 90% del tiempo en 5 minutos</h3>
+                        <a href="https://medium.com/luiskaizen-en-español/aprende-los-comandos-de-git-que-utilizarás-el-90-del-tiempo-en-5-minutos-e23ef1d2a509" target="_blank">Read more</a>
+                    </div>
+                    <div class="article-box">
+                        <h3>Computer Science 101: Nodes and Linked Lists</h3>
+                        <a href="https://medium.com/luiskaizen/computer-science-101-nodes-and-linked-lists-c6b0c046a0bc" target="_blank">Read more</a>
+                    </div>
+                    <div class="article-box">
+                        <h3>A Beginner’s Guide to Process Mining: Key Lessons from the Manifesto</h3>
+                        <a href="https://medium.com/luiskaizen/a-beginners-guide-to-process-mining-key-lessons-from-the-manifesto-a15d10704c1d" target="_blank">Read more</a>
+                    </div>
+                    <div class="article-box">
+                        <h3>Mastering Linux Essentials with Ease: Navigating and Manipulating Files Like a Pro Using the Windows Subsystem for Linux</h3>
+                        <a href="https://medium.com/luiskaizen/mastering-linux-essentials-with-ease-navigating-and-manipulating-files-like-a-pro-using-the-5fb2842a706b" target="_blank">Read more</a>
+                    </div>
                 </div>
-
-                <div class="skill">
-                    <img src="./images/docker.jpg" alt="Docker">
-                    <h3>Docker</h3>
-                    <p>2 years of experience</p>
-                </div>
-                
-                <div class="skill">
-                    <img src="./images/cloud.png" alt="Cloud Computing">
-                    <h3>Cloud Computing</h3>
-                    <p>1 year of experience</p>
-                </div>
-
-                <div class="skill">
-                    <img src="./images/html5.png" alt="HTML5">
-                    <h3>HTML</h3>
-                    <p>1 year of experience</p>
-                </div>
-
-                <div class="skill">
-                    <img src="./images/CSS3.png" alt="CSS3">
-                    <h3>CSS</h3>
-                    <p>1 year of experience</p>
-                </div>
-
             </div>
         </section>
     </body>
